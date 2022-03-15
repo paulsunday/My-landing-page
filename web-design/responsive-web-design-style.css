@@ -1,0 +1,227 @@
+/* start with the body of the entire documemnt  */
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2rem;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/web-design/imgs/cofee\ cup.jfif), url(/images/white\ cofee.jfif);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+line-height: 1.2rem;
+}
+.web-page{
+    background-color: rgb(200, 240, 245);
+    opacity: 0.8; 
+    padding: 20px;
+    width: 100vmax;
+    min-width: fit-content;
+    }
+/* styling the navigation bar  */
+.logo-img{
+    width: 60px;
+    height:60px;
+    margin: inherit;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+   }
+ul{
+    display: flex;
+    list-style: none; 
+}
+ .navbar a{
+    padding: 10px;
+    margin: 0 10px;
+    overflow: hidden;
+ } 
+ a{
+    text-decoration: none;
+}
+li a:hover{
+    background-color:rgb(209, 209, 221);
+    color: black;
+    border: 1px solid gray;
+    border-radius: 10px ;
+    text-decoration: underline;
+}
+/* styling the class intro by making it center and adding some gap to it  */
+.intro{
+    text-align: center;
+    line-height: 1.8;
+  }
+  i {
+  color: blueviolet;
+  } 
+.dp{
+    border-radius: 70px;
+    height: 150px;
+    width: 120px;
+    margin-bottom: 20px;
+}
+button{
+    height: 2rem;
+    width: 8rem;
+    margin: 20px 5px;
+    border-radius: 20px;
+    }
+    button a{
+    color: black;
+}
+button:hover{
+background-color: white;
+box-shadow: 4px 2px  4px 2px gray,
+ -4px -4px 6px -8px gray;
+ }
+/* styling the service section */
+.tittle1, #skills h3{
+    margin: 40px 0 30px;
+    text-decoration-line:underline;
+    font-size: 2rem;
+    text-align: center;
+    height: inherit;
+    padding: 0px;
+}
+
+#service, #skills, #professional-experience, #contacts{
+padding-top: 5px;
+}
+.flex2{
+   display: flex;
+    justify-content:space-between;
+    flex-shrink:inherit
+}
+/* take note of service and services, they are for different styles */
+.services{
+    background-color: aliceblue;
+    margin: 0 10px;
+    max-width:fit-content;
+    min-width: 10rem;
+    padding: 10px;
+    line-height: 5px;
+    text-align: center; 
+}
+.services i, h3{
+    margin: 20px 0;
+}
+.services :last-child{
+    text-align: justify;
+}
+/* below is the styling for proffessional experience */
+.grid-parent{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.title-for-PE{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0;
+}
+.grid-child{
+    display: grid;
+    line-height: 1.2rem;
+    background-color: white;
+    margin: 10px 30px;
+    padding: 10px;
+}
+/* Styling my skill section */
+.container{
+    width: 95%;
+    
+    background-color: rgb(158, 156, 156);
+}
+.html{
+    width: 80%;
+    background-color: green;
+}
+.skill{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.css{
+    width: 50%;
+    background-color: blue;
+}
+.java{
+    width: 20%;
+    background-color: red;
+}
+/* styling my contact section  */
+.flex3{
+    display: grid; 
+    /* grid-template-areas: "a b c"
+    "b b b"
+    "c c c"
+    "d d d"; */
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 10px 20px 20px 20px;
+gap: 30px 10px;
+justify-items: center;
+}
+.contact2{
+    display: grid;
+    text-align: center;
+    background-color: rgb(247, 246, 245);
+width: 20rem;
+height: 10rem;
+padding: 50px;
+}
+
+.fa-phone, .fa-map-marker, .fa-envelope{
+    margin-bottom: 10px;
+}
+.msg{
+    display: grid;
+ margin: 10PX;  
+ width: 100%;
+ }
+input{
+    margin: 10px 0;
+    width: 100%;
+    height: 2.5rem;
+    padding:10px;
+    font-size: 1rem;
+    
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+/* Styling for footer */
+footer p{
+    background-color: azure;
+text-align: center;
+width: 100%;
+}
+/* styling for other screen resolution */
+
+/* @media screen and (max-width: 789px) {
+    *{
+        width: 100%;
+    }
+    body{
+        background-image: none;
+    }
+
+} */
+
+
+
+
+
+
+
+
